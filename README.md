@@ -6,7 +6,17 @@ A utility used to validate the Json Web Signature sent in the header of a callba
 ## Usage
 This example makes use of an existing Json Web Signature generated in the EXT environment. Passing the jws, environment, merchant product id, and callback url, the jws and JOSE header parameters can be validated.
 
-The environments supported are `ext` and `prod`
+
+Body - The body of the callback request sent by Payconiq.
+
+Jws - The Json Web Signature sent by Payconiq.
+
+Environment - The environment from which the callback was generated. `ext` for External and `prod` for Production.
+
+Callback Url - The callback url configured in the payment.
+
+Merchant Product Id - The merchant profile id provided by Payconiq.
+
 
 JWSExample.java
 
